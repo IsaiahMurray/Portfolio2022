@@ -86,20 +86,6 @@ modalCloses.forEach((modalClose) => {
   })
 })
 
-//Portfolio Swiper
-// let swiper = new Swiper('./portfolio-container', {
-//   cssMode: true,
-//   loop: true,
-//   navigation: {
-//     nextEL: '.swiper-button-next',
-//     prevEL: '.swiper-button-prev',
-//   },
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true
-//   }
-// });
-
 let swiper = new Swiper(".swiper-container", {
   cssMode: true,
   loop: true,
@@ -125,9 +111,9 @@ const scrollActive = () => {
     const sectionId = current.getAttribute('id')
 
     if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-      document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link')
+      // document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link')
     } else{
-      document.querySelector('.nav-menu a[href*=' + sectionId + sectionId + ']').classList.remove('active-link')
+      // document.querySelector('.nav-menu a[href*=' + sectionId + sectionId + ']').classList.remove('active-link')
     }
   })
 }
