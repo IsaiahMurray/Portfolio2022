@@ -175,3 +175,14 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-theme', getCurrentTheme())
   localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+let html = document.getElementById('skills-html')
+console.log(html.innerText)
+let span = document.getElementsByClassName('skills-html')
+console.log(span[0])
+span[0].setAttribute("style", `width: ${html.innerText}`);
+
+//Get array of skills-elements
+
+//Iterate and check the id of each selected element
+

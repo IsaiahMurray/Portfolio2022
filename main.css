@@ -489,10 +489,10 @@ img {
     display: block;
     background-color: var(--first-color);
 }
-
+/* 
 .skills-html{
     width: 70%;
-}
+} */
 
 .skills-css{
     width: 70%;
@@ -1038,6 +1038,7 @@ img {
     }
     .home-content{
         padding-top: 5.5rem;
+        column-gap: 2rem;
     }
     .home-blob{
         width: 270px;
