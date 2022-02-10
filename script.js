@@ -69,14 +69,10 @@ span[0].setAttribute("style", `width: ${html.innerText}`);
 
 let list = document.getElementsByClassName('skills-data');
 for(let i = 0; i < list.length; i++){
-  let skillTitle = list[i].children[0].children[0];
   let skillPerc = list[i].children[1].children[0];
   let skillNumber = list[i].children[0].children[1];
   
   skillPerc.setAttribute("style", `width: ${skillNumber.innerText}`);
-  // console.log(skillTitle)
-  // console.log(skillNumber)
-  // console.log(skillPerc)
 }
 
 //Services Modal
