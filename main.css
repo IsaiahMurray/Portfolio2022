@@ -27,6 +27,7 @@
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
+    --h4-font-size: 1rem;
     --noraml-font-size: .938rem;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
@@ -733,10 +734,17 @@ img {
     width: 265px;
     border-radius: .5rem;
     justify-content: center;
+    max-height: 265px;
 }
 
 .portfolio-title{
-    font-size: var(--h1-font-size);
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfolio-header{
+    text-align: center;
+    font-size: var(--h2-font-size);
     margin-bottom: var(--mb-0-5);
 }
 
@@ -749,7 +757,9 @@ img {
 }
 
 .swiper-button-prev::after,
-.swiper-button-next::after{
+.swiper-button-next::after,
+.swiper-two-button-next::after,
+.swiper-two-button-prev::after{
     content: '';
 }
 
@@ -758,11 +768,14 @@ img {
     color: var(--first-color);
 }
 
-.swiper-button-prev{
+.swiper-button-prev,
+.swiper-two-button-prev{
     left: -.5rem;
 }
 
-.swiper-button-next{
+.swiper-button-next,
+.swiper-two-button-next
+{
     right: -.5rem;
 }
 
@@ -776,6 +789,8 @@ img {
 
 .swiper-button-prev,
 .swiper-button-next,
+.swiper-two-button-next,
+.swiper-two-button-prev
 .swiper-pagination-bullet{
     outline: none;
 }
@@ -1148,10 +1163,13 @@ img {
     .swiper-portfolio-icon{
         font-size: 3.5rem;
     }
-    .swiper-button-prev{
+    .swiper-button-prev,
+    .swiper-two-button-prev
+    {
         left: 5rem;
     }
-    .swiper-button-next{
+    .swiper-button-next,
+    .swiper-two-button-next{
         right: 5rem;
     }
     .swiper-container-horizontal > .swiper-pagination-bullets{

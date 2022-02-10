@@ -62,6 +62,12 @@ tabs.forEach((tab) => {
   });
 });
 
+//Skills Percentage
+let html = document.getElementById('skills-html')
+console.log(html.innerText)
+let span = document.getElementsByClassName('skills-html')
+console.log(span[0])
+span[0].setAttribute("style", `width: ${html.innerText}`);
 
 //Services Modal
 const modalViews = document.querySelectorAll('.services-modal');
@@ -95,6 +101,19 @@ let swiper = new Swiper(".swiper-container", {
   },
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+let swiperTwo = new Swiper(".swiper-container-two", {
+  cssMode: true,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-two-button-next",
+    prevEl: ".swiper-two-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination-two",
     clickable: true,
   },
 });
@@ -175,14 +194,3 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-theme', getCurrentTheme())
   localStorage.setItem('selected-icon', getCurrentIcon())
 })
-
-let html = document.getElementById('skills-html')
-console.log(html.innerText)
-let span = document.getElementsByClassName('skills-html')
-console.log(span[0])
-span[0].setAttribute("style", `width: ${html.innerText}`);
-
-//Get array of skills-elements
-
-//Iterate and check the id of each selected element
-
