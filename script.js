@@ -180,11 +180,11 @@ const selectedTheme = localStorage.getItem('selected-theme');
 const selectedIcon = localStorage.getItem('selected-icon');
 
 const getCurrentTheme = () => {
-  document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+  return document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 }
 
 const getCurrentIcon = () => {
-  themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+  return themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
 }
 
 if(selectedTheme){
